@@ -20,6 +20,14 @@ Standard NTP (`systemd-timesyncd`, `chrony`) often fails or isn't enough in a fe
 
 ## Installation
 
+### Quick Install (Using Curl)
+
+```bash
+curl -fsSL [https://raw.githubusercontent.com/Anish-Prime/systemd-http-time-sync/main/install.sh](https://raw.githubusercontent.com/Anish-Prime/systemd-http-time-sync/main/install.sh) | sudo bash
+```
+
+### Normal Install
+
 ```bash
 git clone [https://github.com/Anish-Prime/systemd-http-time-sync.git](https://github.com/Anish-Prime/systemd-http-time-sync.git)
 cd systemd-http-time-sync

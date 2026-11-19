@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync system clock via HTTP Date header
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/http-time-sync.sh
+
+[Install]
+WantedBy=multi-user.target

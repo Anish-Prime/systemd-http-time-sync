@@ -23,13 +23,13 @@ Standard NTP (`systemd-timesyncd`, `chrony`) often fails or isn't enough in a fe
 ### Quick Install (Using Curl)
 
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/Anish-Prime/systemd-http-time-sync/main/install.sh](https://raw.githubusercontent.com/Anish-Prime/systemd-http-time-sync/main/install.sh) | sudo bash
+curl -fsSL https://raw.githubusercontent.com/Anish-Prime/systemd-http-time-sync/main/install.sh | sudo bash
 ```
 
 ### Normal Install
 
 ```bash
-git clone [https://github.com/Anish-Prime/systemd-http-time-sync.git](https://github.com/Anish-Prime/systemd-http-time-sync.git)
+git clone https://github.com/Anish-Prime/systemd-http-time-sync.git
 cd systemd-http-time-sync
 sudo ./install.sh
 ```
@@ -45,11 +45,17 @@ journalctl -u http-time-sync.service -n 5
 You should see output similar to:
 
 ```text
-Time synced from [http://google.com](http://google.com) to: Thu, 19 Nov 2026 20:04:34 GMT
+Time synced from http://google.com to: Thu, 19 Nov 2026 20:04:34 GMT
 http-time-sync.service: Deactivated successfully.
 ```
 
 ## Uninstall
+
+### Quick Uninstall (Using Curl)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Anish-Prime/systemd-http-time-sync/main/uninstall.sh | sudo bash
+```
 
 ```bash
 sudo ./uninstall.sh

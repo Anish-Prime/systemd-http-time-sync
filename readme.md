@@ -16,7 +16,7 @@ Standard NTP (`systemd-timesyncd`, `chrony`) often fails or isn't enough in a fe
 1. Launches automatically on boot via `systemd` once the network is up.
 2. Polls reliable fallback servers (`google.com`, `cloudflare.com`, `1.1.1.1`) over plain HTTP for their `Date` header.
 3. Updates both the OS clock (`date -s`) and the hardware clock (`hwclock --systohc`), then exits cleanly.
-4. If the machine is offline at boot, it retries every 10 seconds until a connection is available.
+4. If the machine is offline at boot, it retries every 60 seconds until a connection is available.
 
 ## Installation
 
